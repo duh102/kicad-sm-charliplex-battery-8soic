@@ -224,17 +224,6 @@ F 3 "~" H 3500 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 3500 3300 3500
-$Comp
-L MCU_Microchip_ATtiny:ATtiny402-SS U1
-U 1 1 5DEC46B9
-P 5150 3750
-F 0 "U1" H 4621 3796 50  0000 R CNN
-F 1 "ATtiny402-SS" H 4621 3705 50  0000 R CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 3750 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-402-AVR-MCU-with-Core-Independent-Peripherals_and-picoPower-40001969A.pdf" H 5150 3750 50  0001 C CNN
-	1    5150 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 3950 3700 3850
 Wire Wire Line
@@ -246,22 +235,35 @@ Wire Wire Line
 	3700 3950 3700 4350
 Connection ~ 3700 3950
 Wire Wire Line
-	5150 3150 5400 3150
-Connection ~ 5150 3150
-Wire Wire Line
-	5600 3150 5750 3150
-Wire Wire Line
-	5750 3150 5750 3450
-Wire Wire Line
 	5750 3550 6000 3550
 Wire Wire Line
 	6000 3650 5750 3650
 Wire Wire Line
 	5750 3750 6000 3750
 NoConn ~ 5750 3850
-NoConn ~ 5750 3950
-Wire Wire Line
-	3700 3150 5150 3150
 Wire Wire Line
 	3700 4350 5150 4350
+Wire Wire Line
+	3700 3150 5150 3150
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13A-SSU U1
+U 1 1 5DEBE77A
+P 5150 3750
+F 0 "U1" H 4620 3796 50  0000 R CNN
+F 1 "ATtiny13A-SSU" H 4620 3705 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 3750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 5150 3750 50  0001 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 3150
+Wire Wire Line
+	5150 3150 5400 3150
+Wire Wire Line
+	5850 3150 5850 3950
+Wire Wire Line
+	5850 3950 5750 3950
+Wire Wire Line
+	5600 3150 5850 3150
+NoConn ~ 5750 3450
 $EndSCHEMATC

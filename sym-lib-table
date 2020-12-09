@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sm_charlieplex_battery_8soic-rescue)(type Legacy)(uri ${KIPRJMOD}/sm_charlieplex_battery_8soic-rescue.lib)(options "")(descr ""))
+)
